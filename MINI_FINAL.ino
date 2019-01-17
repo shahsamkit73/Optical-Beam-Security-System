@@ -30,7 +30,7 @@ void loop()
 
 void sendMessage()
 {
-  mySerial.println("AT+CMGS=\"+917874071510\"\r");
+  mySerial.println("AT+CMGS=\"\"\r");
   delay(1000);
   mySerial.println("ALERT !");
   delay(1000);
