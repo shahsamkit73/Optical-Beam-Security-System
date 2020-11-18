@@ -1,9 +1,9 @@
 #include <SoftwareSerial.h>
-SoftwareSerial mySerial(9,10);
+SoftwareSerial mySerial(9,10);  //(Rx pin, Tx pin)
 void setup()
 {
   mySerial.begin(9600);
-  pinMode(7,OUTPUT);
+  pinMode(7,OUTPUT);  // Buzzer is connected to digital pin 7
   Serial.begin(9600);
   delay(100);
 }
